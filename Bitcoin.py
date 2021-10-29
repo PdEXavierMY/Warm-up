@@ -1,9 +1,9 @@
-def bitcoin(a, b, c):
-    #a = número de bitcoin#
-    #b = valor de bitcoin#
-    #c = valor de 1 euro en dólares#
-    euros = float(a) * float(b)
-    dolares = euros * float(c)
+def bitcoin(nbitcoin, bitcoinvalue, euro_a_dolar):
+    #nbitcoin = número de bitcoin#
+    #bitcoinvalue = valor de bitcoin#
+    #euro_a_dolar = valor de 1 euro en dólares#
+    euros = float(nbitcoin) * float(bitcoinvalue)
+    dolares = euros * float(euro_a_dolar)
     print("Tienes " + str(dolares) + "$")
     print("Tienes " +  str(euros) + "€")
     if euros < 30000:
