@@ -22,10 +22,13 @@ precio_helado = 100
 porcentaje_hambre = 17
 print("Tengo hambre(estoy lleno tan solo un 17%).")
 while porcentaje_hambre < 100:
-    if porcentaje_hambre > 85:
-        print("Ya estoy satisfecho!!(Por fin estoy lleno al " + str(porcentaje_hambre) + "%).")
-        break
-    else:
         porcentaje_hambre += 17
+        dinero -= precio_helado
         precio_helado += (precio_helado * (20/100))
-        print("Sigo con hambre(estoy lleno tan solo un " + str(porcentaje_hambre) + "%).")
+        if porcentaje_hambre >= 85:
+            print("Ya estoy satisfecho!!(Por fin estoy lleno al " + str(porcentaje_hambre) + "%).")
+            print("Me sobran " + str(dinero) + "€.")
+            break
+        else:
+            print("Sigo con hambre(estoy lleno tan solo un " + str(porcentaje_hambre) + "%).")
+            print("Me quedan " + str(dinero) + "€.")
