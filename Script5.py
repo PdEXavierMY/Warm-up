@@ -21,8 +21,8 @@ else:
             break
         else:
             print("Sigo con hambre(estoy lleno tan solo un " + str(porcentaje_hambre_nuevo) + "%).")
-            if dinero <= 0:
-                print("No me queda más dinero")
+            if dinero <= 0 or dinero < precio_helado_nuevo:
+                print("No me queda más dinero para un helado.")
                 break
             else:
                 print("Me quedan " + str(dinero) + "€.")
