@@ -9,6 +9,8 @@ print(21 + 43)
 print(142 - 52)
 print(10 * 342)
 print(5 ** 2)
-#La sintaxis realizada en los cuatro casos es de tipo integrer, es decir, un número entero#
 
 #Tarea 4#
+altura = 200
+altura += 50
+print(altura)
