@@ -5,6 +5,7 @@ precio_helado_nuevo = precio_helado
 #Se incrementa cada vez que compras uno un 20%#
 porcentaje_hambre = int(input())
 porcentaje_hambre_nuevo = porcentaje_hambre
+
 if porcentaje_hambre > 85:
     print("Ya estoy satisfecho!!")
 else:
